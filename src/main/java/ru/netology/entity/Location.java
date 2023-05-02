@@ -41,4 +41,14 @@ public class Location {
         if (o == null || getClass() != o.getClass()) return false;
         return city.equals(((Location) o).city);
     }
+
+    @Override
+    public String toString() {
+        return "Location{" +
+                "city='" + city + '\'' +
+                ", country=" + country +
+                ", street='" + street + '\'' +
+                ", builing=" + builing +
+                '}';
+    }
 }
